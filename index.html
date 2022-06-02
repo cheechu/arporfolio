@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!--meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" /!-->
+  <title>Marker based AR Portfolio</title>
+
+  <!-- Import A-Frame and then AR.js -->
+  <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+
+  <script src="https://raw.githack.com/AR-js-org/AR.js/master/aframe/build/aframe-ar.js"></script>
+
+  
+</head>
+
+<body style="margin : 0px; overflow: hidden;">
+
+  <!-- A-frame scene -->
+ <a-scene vr-mode-ui="enabled:false;" embedded arjs="trackingMethod:best;sourceType:webcam;debugUIEnabled;false;">
+
+<a-assests>
+  <image id="card2" src="./VR-AR-ProjectCards/2.png"></image>
+  <image id="card3" src="./VR-AR-ProjectCards/3.png"></image>
+  <image id="card4" src="./VR-AR-ProjectCards/4.png"></image>
+  <image id="card5" src="./VR-AR-ProjectCards/5.png"></image>
+  <image id="card6" src="./VR-AR-ProjectCards/6.png"></image>
+  <image id="card1" src="./VR-AR-ProjectCards/1.png"></image>
+
+</a-assests>
+
+  <!--virtualflight-->
+  <a-marker-camera type="pattern" url="./pattern-marker/virtual-flight/pattern-icon-01.patt">
+
+  </a-marker-camera>
+   <!--virtualtour-->
+   <a-marker-camera type="pattern" url="./pattern-marker/virtual-tour/pattern-icon-04.patt">
+    
+  </a-marker-camera> 
+  
+  <!--virtualshootinggame-->
+  <a-marker-camera type="pattern" url="./pattern-marker/shooting-game/pattern-icon-06.patt">
+    
+  </a-marker-camera>
+
+   <!--armenucard-->
+   <a-marker-camera type="pattern" url="./pattern-marker/ar-menu-card/pattern-icon-02.patt">
+    
+  </a-marker-camera>
+
+   <!--arnavigation-->
+   <a-marker-camera type="pattern" url="./pattern-marker/ar-navigation/pattern-icon-03.patt">
+    
+  </a-marker-camera>
+
+   <!--arfacerecognition-->
+   <a-marker-camera type="pattern" url="./pattern-marker/ar-face-regocnition/pattern-icon-05.patt">
+    
+  </a-marker-camera>
+ </a-scene>
+
+ 
+</body>
+
+</html>
